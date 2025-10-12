@@ -2,7 +2,10 @@
   "name": "axonc2",
   "version": "0.1.0",
   "dependencies": [
-    "fmt"
+    "fmt",
+    "boost-beast",
+    "redis-plus-plus",
+    "sqlitecpp"
   ],
   "builtin-baseline": "4e08971f3ddc13018ca858a692efe92d3b6b9fce"
 }
