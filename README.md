@@ -31,7 +31,7 @@ This project uses CMake Presets for a consistent build experience across all pla
 
     Clone the project and its submodules (vcpkg) with a single command:
     ```bash
-    git clone --recurse-submodules [https://github.com/your-username/AxonC2.git](https://github.com/your-username/AxonC2.git)
+    git clone --recurse-submodules https://github.com/jamesodukoya/AxonC2.git
     cd AxonC2
     ```
 
