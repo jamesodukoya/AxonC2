@@ -11,6 +11,63 @@
 
 Axon C2 is a sophisticated, full-stack command and control system designed for autonomous vehicle operations. The platform combines cutting-edge C++20 asynchronous programming with modern web technologies to deliver real-time telemetry visualization, AI-powered threat detection, and seamless mission control capabilities.
 
+## Prerequisites
+
+Before you begin, ensure you have the following tools installed on your system:
+
+* **A C++23 Compiler**:
+    * **Linux**: Clang++ 17+ or GCC 13+
+    * **macOS**: Latest Xcode Command Line Tools
+    * **Windows**: Visual Studio 2022
+* **Git**: Required for cloning the repository and its submodules.
+* **CMake**: Version 3.28 or higher. You can download it from the [official CMake website](https://cmake.org/download/).
+* **Ninja**: A fast, small build system. You can download it from the [official Ninja website](https://ninja-build.org/).
+
+## Building the Project
+
+This project uses CMake Presets for a consistent build experience across all platforms.
+
+1.  **Clone the Repository**
+
+    Clone the project and its submodules (vcpkg) with a single command:
+    ```bash
+    git clone --recurse-submodules [https://github.com/your-username/AxonC2.git](https://github.com/your-username/AxonC2.git)
+    cd AxonC2
+    ```
+
+2.  **Bootstrap vcpkg**
+
+    This step only needs to be done once to prepare the dependency manager.
+    ```bash
+    # For Linux / macOS
+    ./vcpkg/bootstrap-vcpkg.sh
+
+    # For Windows (PowerShell)
+    .\vcpkg\bootstrap-vcpkg.bat
+    ```
+
+3.  **Configure the Project**
+
+    Select a preset to generate the build files. For example, to use the Clang preset on Linux:
+    ```bash
+    cmake --preset linux-clang
+    ```
+    *You can see a list of all available presets by running `cmake --list-presets`.*
+
+4.  **Build the Project**
+
+    Build the configured project. For example, to build the Debug configuration for the `linux-clang` preset:
+    ```bash
+    cmake --build --preset linux-clang-debug
+    ```
+
+5.  **Run the Executable**
+
+    The executable will be located in the build directory.
+    ```bash
+    ./build/linux-clang/Debug/AxonC2
+    ```
+
 ### Architecture Highlights
 
 - **High-Performance Core**: Built with C++20 coroutines and lock-free data structures
