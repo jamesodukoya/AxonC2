@@ -1,7 +1,11 @@
 #The root CMakeLists.txt file.
 cmake_minimum_required(VERSION 3.28)
 
-# set(CMAKE_TOOLCHAIN_FILE "$ENV{HOME}/vcpkg/scripts/buildsystems/vcpkg.cmake" CACHE STRING "Vcpkg toolchain file")
+# Set the vcpkg toolchain file using a relative path
+if(EXISTS "${CMAKE_SOURCE_DIR}/vcpkg/scripts/buildsystems/vcpkg.cmake")
+    set(CMAKE_TOOLCHAIN_FILE "${CMAKE_SOURCE_DIR}/vcpkg/scripts/buildsystems/vcpkg.cmake"
+        CACHE STRING "Vcpkg toolchain file")
+endif()
 
 #The project name is set here. In this case it's Rocket, but you can change it to whatever you want.
 project(AxonC2  VERSION 1.0.0 LANGUAGES CXX)

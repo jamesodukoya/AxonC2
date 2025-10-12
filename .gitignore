@@ -75,3 +75,9 @@ ipch/
 
 build/
 .vscode/
+
+# Ignore vcpkg build and installation artifacts
+/vcpkg/buildtrees/
+/vcpkg/downloads/
+/vcpkg/packages/
+/vcpkg/installed/
