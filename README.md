@@ -16,7 +16,7 @@ Axon C2 is a sophisticated, full-stack command and control system designed for a
 Before you begin, ensure you have the following tools installed on your system:
 
 * **A C++20 Compiler**:
-    * **Linux**: Clang++ 17+ or GCC 13+
+    * **Linux**: Clang++ 14+ or GCC 11+
     * **macOS**: Latest Xcode Command Line Tools
     * **Windows**: Visual Studio 2022
 * **Git**: Required for cloning the repository and its submodules.
