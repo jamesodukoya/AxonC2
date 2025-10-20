@@ -1,0 +1,23 @@
+{
+    "name": "AxonC2 Dev Environment",
+    // Tells VS Code to use your Dockerfile
+    "build": {
+        "dockerfile": "../Dockerfile",
+        "context": ".."
+    },
+    // Mounts your project folder into /workspace inside the container
+    "workspaceFolder": "/workspace",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+    // Installs useful VS Code extensions inside the container
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools-extension-pack",
+                "ms-vscode.cmake-tools",
+                "ms-vscode.vscode-docker",
+                "vadimcn.vscode-lldb",
+                "ms-azuretools.vscode-containers"
+            ]
+        }
+    }
+}
