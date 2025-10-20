@@ -81,3 +81,5 @@ build/
 /vcpkg/downloads/
 /vcpkg/packages/
 /vcpkg/installed/
+
+filesystem_structure.png
