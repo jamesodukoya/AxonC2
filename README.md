@@ -7,6 +7,9 @@
 
 > **A next-generation Command and Control platform engineered for real-time UAV telemetry processing, AI-powered perception, and ultra-low-latency mission control.**
 
+## [Proof of concept](https://axon-c2-poc.vercel.app/)
+## [Demo video](https://youtu.be/xUNpxMBmeog)
+
 ## Project Overview
 
 Axon C2 is a sophisticated, full-stack command and control system designed for autonomous vehicle operations. The platform combines cutting-edge C++20 asynchronous programming with modern web technologies to deliver real-time telemetry visualization, AI-powered threat detection, and seamless mission control capabilities.
